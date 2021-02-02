@@ -29,12 +29,12 @@ def get_number_of_char(string: str, char: str) -> int:
 
 def get_number_of_words(sentence: str, word: str) -> int:
     #Va associer les signes de ponctuation aux mots
-    occurence = 0;
+    occurence = 0
     sentence = sentence.split()
     for i in sentence:
         if i == word:
             occurence += 1
-            return occurence
+    return occurence
     """
     #Retournerait true autant pour un doo seul que dans un mot
     nombre_mots = 0
