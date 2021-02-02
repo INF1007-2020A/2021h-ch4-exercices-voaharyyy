@@ -33,7 +33,20 @@ def get_number_of_words(sentence: str, word: str) -> int:
     for i in sentence:
         if i == word:
             occurence += 1
-    return occurence
+            return occurence
+    """
+    #Plus recommandé
+    nombre_mots = 0
+    for i in range(len(sentence)):
+        if sentence[i:i + len(word)] == word:
+            nombre_mots += 1
+    return nombre_mots
+    """
+
+
+
+
+
 
 
 def main() -> None:
